@@ -1,0 +1,81 @@
+\documentclass[UTF8, 12pt, A4]{article}
+
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+% \geometry{a4paper}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{indentfirst}
+
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumerate}
+\usepackage{subfig}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{automata,positioning}
+
+\numberwithin{equation}{section}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\hmwkTitle}{Homework Report}
+\newcommand{\hmwkClass}{Numerical Methods in Engineering}
+\newcommand{\hmwkClassInstructor}{Professor \quad Wang Bin}
+\newcommand{\hmwkAuthorName}{BX2201913 \quad Bao Chenyu}
+
+\title{
+    \vspace{2in}
+    \Huge\textmd{\textbf{\hmwkClass}\\
+    \vspace{0.3in}
+    \Huge\textmd{\textbf{\hmwkTitle}}}\\
+    \vspace{0.3in}\Large{\textit{\hmwkClassInstructor}}
+    \vspace{1in}
+}
+\author{\Large\hmwkAuthorName}
+\date{\Large\today}
+\pagenumbering{arabic}
+
+\lhead{\hmwkAuthorName}
+\chead{\hmwkTitle}
+\rhead{\hmwkClass}
+% \rhead{\firstxmark}
+% \lfoot{\lastxmark}
+\cfoot{\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% cover
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% table of contents
+\setcounter{page}{1}
+\pagenumbering{Roman}
+\tableofcontents
+\newpage
+
+% contents
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\include{contents/ch1.tex}
+\include{contents/ch2.tex}
+\include{contents/ch3.tex}
+
+\bibliographystyle{plain}
+\bibliography{report.bib}
+
+\end{document}

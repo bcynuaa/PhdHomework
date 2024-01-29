@@ -1,0 +1,6 @@
+# ignore latex appendix files
+*.aux
+*.log
+*.synctex.gz
+*.out
+*.toc

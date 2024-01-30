@@ -1,0 +1,93 @@
+\documentclass[UTF8, 12pt, A4]{ctexart}
+
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage[margin=1in]{geometry}
+% \geometry{a4paper}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{indentfirst}
+
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usetikzlibrary{automata,positioning}
+
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
+
+\linespread{1.1}
+
+\numberwithin{equation}{section}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{4}
+
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\hmwkTitle}{飞机基本飞行性能}
+\newcommand{\hmwkClass}{大气飞行力学}
+\newcommand{\hmwkClassInstructor}{Instructor \fangsong 龚正}
+\newcommand{\hmwkAuthorName}{BX2201913  包晨宇}
+
+\title{
+    \vspace{2in}
+    \Huge\textmd{\textbf{\hmwkClass}\\
+    \vspace{0.3in}
+    \Huge\textmd{\textbf{\hmwkTitle}}}\\
+    \vspace{0.3in}\Large{\textit{\hmwkClassInstructor}}
+    \vspace{1in}
+}
+\author{\Large\hmwkAuthorName}
+\date{\Large\today}
+\pagenumbering{arabic}
+
+\lhead{\hmwkAuthorName}
+\chead{\hmwkTitle}
+\rhead{\hmwkClass}
+% \rhead{\firstxmark}
+% \lfoot{\lastxmark}
+\cfoot{\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% cover
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% table of contents
+\setcounter{page}{1}
+\pagenumbering{Roman}
+\tableofcontents
+\newpage
+
+% contents
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\include{contents/ch1.tex}
+\include{contents/ch2.tex}
+\include{contents/ch3.tex}
+\include{contents/ch4.tex}
+\include{contents/ch5.tex}
+\include{contents/ch6.tex}
+
+\bibliographystyle{plain}
+\bibliography{report.bib}
+
+\end{document}
